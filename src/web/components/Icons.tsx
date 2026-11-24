@@ -139,3 +139,26 @@ export function SearchIcon({ size = 15 }: { size?: number }) {
     </svg>
   );
 }
+
+export function SlidersIcon({ size = 15 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <circle cx="9" cy="6" r="2" fill="currentColor" />
+      <line x1="4" y1="12" x2="20" y2="12" />
+      <circle cx="15" cy="12" r="2" fill="currentColor" />
+      <line x1="4" y1="18" x2="20" y2="18" />
+      <circle cx="10" cy="18" r="2" fill="currentColor" />
+    </svg>
+  );
+}

@@ -17,6 +17,7 @@ import {
   ListIcon,
   MapPinIcon,
   SearchIcon,
+  SlidersIcon,
 } from "./Icons.js";
 import { ListingsMap } from "./ListingsMap.js";
 
@@ -87,9 +88,17 @@ export function ListingsStage() {
   const [hideRuledOut, setHideRuledOut] = useState(true);
   const [savedOnly, setSavedOnly] = useState(false);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [overrides, setOverrides] = useState<Record<string, LocalUserOverride>>(
     () => loadUserOverrides()
   );
+
+  const activeAdvancedFilterCount =
+    (beds !== "any" ? 1 : 0) +
+    (month !== "all" ? 1 : 0) +
+    (maxBudget !== "any" ? 1 : 0) +
+    (savedOnly ? 1 : 0) +
+    (!hideRuledOut ? 1 : 0);
 
   const getStatus = (apt: Apartment): UserStatus =>
     overrides[apt.id]?.status ?? apt.user.status;
@@ -251,7 +260,11 @@ export function ListingsStage() {
 
         {/* Primary Filter Row */}
         <div className="filter-bar" role="region" aria-label="Rental filters">
-          <div className="filter-group" role="group" aria-label="Property type">
+          <div
+            className="filter-group filter-group--scroll"
+            role="group"
+            aria-label="Property type"
+          >
             <span className="filter-label">Type</span>
             {PROPERTY_TYPES.map((type) => (
               <button
@@ -271,138 +284,171 @@ export function ListingsStage() {
             ))}
           </div>
 
-          <div className="view-toggle" role="group" aria-label="Layout mode">
+          <div className="filter-bar__right">
             <button
               type="button"
-              className={`view-toggle__btn ${
-                viewMode === "list" ? "view-toggle__btn--active" : ""
+              className={`mobile-filters-btn ${
+                mobileFiltersOpen || activeAdvancedFilterCount > 0
+                  ? "mobile-filters-btn--active"
+                  : ""
               }`}
-              aria-pressed={viewMode === "list"}
-              onClick={() => setViewMode("list")}
+              aria-expanded={mobileFiltersOpen}
+              aria-controls="advanced-filters-panel"
+              onClick={() => setMobileFiltersOpen((open) => !open)}
             >
-              <ListIcon size={15} />
-              List
+              <SlidersIcon size={15} />
+              <span>
+                Filters
+                {activeAdvancedFilterCount > 0
+                  ? ` (${activeAdvancedFilterCount})`
+                  : ""}
+              </span>
             </button>
-            <button
-              type="button"
-              className={`view-toggle__btn ${
-                viewMode === "map" ? "view-toggle__btn--active" : ""
-              }`}
-              aria-pressed={viewMode === "map"}
-              onClick={() => setViewMode("map")}
-            >
-              <MapPinIcon size={15} />
-              Map
-            </button>
+
+            <div className="view-toggle" role="group" aria-label="Layout mode">
+              <button
+                type="button"
+                className={`view-toggle__btn ${
+                  viewMode === "list" ? "view-toggle__btn--active" : ""
+                }`}
+                aria-pressed={viewMode === "list"}
+                onClick={() => setViewMode("list")}
+              >
+                <ListIcon size={15} />
+                List
+              </button>
+              <button
+                type="button"
+                className={`view-toggle__btn ${
+                  viewMode === "map" ? "view-toggle__btn--active" : ""
+                }`}
+                aria-pressed={viewMode === "map"}
+                onClick={() => setViewMode("map")}
+              >
+                <MapPinIcon size={15} />
+                Map
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* Secondary Controls Row: Search, Beds, Month, Budget, Sort */}
-        <div className="controls-row">
+        {/* Search + Collapsible Advanced Controls (always open on desktop) */}
+        <div className="search-row-mobile">
           <label className="search-field">
             <span className="sr-only">Search street, neighborhood, or feature</span>
             <SearchIcon size={15} />
             <input
+              id="listing-search"
+              name="listing-search"
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search street, Bridge St, garage, pets..."
             />
           </label>
-
-          <div className="filter-group" role="group" aria-label="Bedrooms">
-            {BED_OPTIONS.map((option) => (
-              <button
-                key={option.key}
-                type="button"
-                className={`filter-pill filter-pill--compact ${
-                  beds === option.key ? "filter-pill--active" : ""
-                }`}
-                aria-pressed={beds === option.key}
-                onClick={() => setBeds(option.key)}
-              >
-                {option.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="select-group">
-            <select
-              aria-label="Move-in month"
-              className="control-select"
-              value={month}
-              onChange={(e) => setMonth(e.target.value as MonthFilter)}
-            >
-              {MONTH_OPTIONS.map((m) => (
-                <option key={m.key} value={m.key}>
-                  {m.label}
-                </option>
-              ))}
-            </select>
-
-            <select
-              aria-label="Max monthly budget"
-              className="control-select"
-              value={maxBudget}
-              onChange={(e) => setMaxBudget(e.target.value as BudgetFilter)}
-            >
-              {BUDGET_OPTIONS.map((b) => (
-                <option key={b.key} value={b.key}>
-                  {b.label}
-                </option>
-              ))}
-            </select>
-
-            <select
-              aria-label="Sort listings"
-              className="control-select"
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as SortOption)}
-            >
-              {SORT_OPTIONS.map((s) => (
-                <option key={s.key} value={s.key}>
-                  {s.label}
-                </option>
-              ))}
-            </select>
-          </div>
         </div>
 
-        {/* Saved / Ruled-out Quick Toggles */}
-        <div className="subbar-row">
-          <div className="subbar-toggles">
-            <button
-              type="button"
-              className={`subbar-chip ${savedOnly ? "subbar-chip--active" : ""}`}
-              aria-pressed={savedOnly}
-              onClick={() => setSavedOnly((v) => !v)}
-            >
-              Shortlist ({savedCount})
-            </button>
-            <label className="checkbox-toggle">
-              <input
-                type="checkbox"
-                checked={hideRuledOut}
-                onChange={(e) => setHideRuledOut(e.target.checked)}
-              />
-              <span>Hide ruled out</span>
-            </label>
+        <div
+          id="advanced-filters-panel"
+          className={`advanced-filters ${
+            mobileFiltersOpen ? "advanced-filters--open" : ""
+          }`}
+        >
+          <div className="controls-row">
+            <div className="filter-group" role="group" aria-label="Bedrooms">
+              {BED_OPTIONS.map((option) => (
+                <button
+                  key={option.key}
+                  type="button"
+                  className={`filter-pill filter-pill--compact ${
+                    beds === option.key ? "filter-pill--active" : ""
+                  }`}
+                  aria-pressed={beds === option.key}
+                  onClick={() => setBeds(option.key)}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+
+            <div className="select-group">
+              <select
+                aria-label="Move-in month"
+                className="control-select"
+                value={month}
+                onChange={(e) => setMonth(e.target.value as MonthFilter)}
+              >
+                {MONTH_OPTIONS.map((m) => (
+                  <option key={m.key} value={m.key}>
+                    {m.label}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                aria-label="Max monthly budget"
+                className="control-select"
+                value={maxBudget}
+                onChange={(e) => setMaxBudget(e.target.value as BudgetFilter)}
+              >
+                {BUDGET_OPTIONS.map((b) => (
+                  <option key={b.key} value={b.key}>
+                    {b.label}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                aria-label="Sort listings"
+                className="control-select"
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as SortOption)}
+              >
+                {SORT_OPTIONS.map((s) => (
+                  <option key={s.key} value={s.key}>
+                    {s.label}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
 
-          {(query ||
-            propertyType !== "all" ||
-            beds !== "any" ||
-            month !== "all" ||
-            maxBudget !== "any" ||
-            savedOnly) && (
-            <button
-              type="button"
-              className="reset-link"
-              onClick={resetFilters}
-            >
-              Reset all filters
-            </button>
-          )}
+          {/* Saved / Ruled-out Quick Toggles */}
+          <div className="subbar-row">
+            <div className="subbar-toggles">
+              <button
+                type="button"
+                className={`subbar-chip ${savedOnly ? "subbar-chip--active" : ""}`}
+                aria-pressed={savedOnly}
+                onClick={() => setSavedOnly((v) => !v)}
+              >
+                Shortlist ({savedCount})
+              </button>
+              <label className="checkbox-toggle">
+                <input
+                  type="checkbox"
+                  checked={hideRuledOut}
+                  onChange={(e) => setHideRuledOut(e.target.checked)}
+                />
+                <span>Hide ruled out</span>
+              </label>
+            </div>
+
+            {(query ||
+              propertyType !== "all" ||
+              beds !== "any" ||
+              month !== "all" ||
+              maxBudget !== "any" ||
+              savedOnly) && (
+              <button
+                type="button"
+                className="reset-link"
+                onClick={resetFilters}
+              >
+                Reset all filters
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Main View: List or Map */}
@@ -545,6 +591,8 @@ export function ListingsStage() {
                       </select>
 
                       <input
+                        id={`note-${apt.id}`}
+                        name={`note-${apt.id}`}
                         type="text"
                         className="note-input"
                         aria-label={`Personal note for ${apt.name}`}
