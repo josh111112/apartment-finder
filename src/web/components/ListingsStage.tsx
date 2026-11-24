@@ -69,17 +69,29 @@ const STATUS_LABELS: Record<UserStatus, string> = {
   ruled_out: "Ruled Out",
 };
 
+const AREA_OPTIONS = [
+  { key: "all", label: "Both sides of river" },
+  { key: "west", label: "Bridge St / Westside" },
+  { key: "east", label: "Cherry St / Eastside" },
+] as const;
+
 type PropertyFilter = (typeof PROPERTY_TYPES)[number]["key"];
 type BedFilter = (typeof BED_OPTIONS)[number]["key"];
 type MonthFilter = (typeof MONTH_OPTIONS)[number]["key"];
 type BudgetFilter = (typeof BUDGET_OPTIONS)[number]["key"];
 type SortOption = (typeof SORT_OPTIONS)[number]["key"];
+type AreaFilter = (typeof AREA_OPTIONS)[number]["key"];
 type ViewMode = "list" | "map";
+
+function isEastOfRiver(apt: Apartment): boolean {
+  return /\b(49503|49506)\b/.test(apt.address) || /\b(SE|NE|E)\b/.test(apt.address);
+}
 
 export function ListingsStage() {
   const allListings = apartmentsData.apartments;
 
   const [query, setQuery] = useState("");
+  const [area, setArea] = useState<AreaFilter>("all");
   const [propertyType, setPropertyType] = useState<PropertyFilter>("all");
   const [beds, setBeds] = useState<BedFilter>("any");
   const [month, setMonth] = useState<MonthFilter>("all");
@@ -94,6 +106,7 @@ export function ListingsStage() {
   );
 
   const activeAdvancedFilterCount =
+    (area !== "all" ? 1 : 0) +
     (beds !== "any" ? 1 : 0) +
     (month !== "all" ? 1 : 0) +
     (maxBudget !== "any" ? 1 : 0) +
@@ -155,6 +168,8 @@ export function ListingsStage() {
       ) {
         return false;
       }
+      if (area === "west" && isEastOfRiver(apt)) return false;
+      if (area === "east" && !isEastOfRiver(apt)) return false;
       if (propertyType !== "all" && apt.propertyType !== propertyType) {
         return false;
       }
@@ -209,6 +224,7 @@ export function ListingsStage() {
   }, [
     allListings,
     query,
+    area,
     propertyType,
     beds,
     month,
@@ -230,6 +246,7 @@ export function ListingsStage() {
 
   const resetFilters = () => {
     setQuery("");
+    setArea("all");
     setPropertyType("all");
     setBeds("any");
     setMonth("all");
@@ -244,12 +261,12 @@ export function ListingsStage() {
         <div className="listings-header">
           <div>
             <h2 id="listings-heading" className="listings-heading">
-              Bridge Street &amp; Westside Rentals
+              Bridge St, Westside &amp; Cherry St Rentals
             </h2>
             <p className="listings-lead tabular-nums">
               Showing <strong>{filteredListings.length}</strong> of{" "}
-              {allListings.length} non-complex rentals in Grand Rapids 49504
-              (American Realty &amp; The Fulton Group).
+              {allListings.length} non-complex rentals across Westside (49504)
+              and Cherry St / Heritage Hill / East Hills (49503 &amp; 49506).
             </p>
           </div>
           <div className="window-pill tabular-nums">
@@ -373,6 +390,19 @@ export function ListingsStage() {
 
             <div className="select-group">
               <select
+                aria-label="Neighborhood side of river"
+                className="control-select"
+                value={area}
+                onChange={(e) => setArea(e.target.value as AreaFilter)}
+              >
+                {AREA_OPTIONS.map((a) => (
+                  <option key={a.key} value={a.key}>
+                    {a.label}
+                  </option>
+                ))}
+              </select>
+
+              <select
                 aria-label="Move-in month"
                 className="control-select"
                 value={month}
@@ -435,6 +465,7 @@ export function ListingsStage() {
             </div>
 
             {(query ||
+              area !== "all" ||
               propertyType !== "all" ||
               beds !== "any" ||
               month !== "all" ||

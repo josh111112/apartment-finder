@@ -41,7 +41,7 @@ export function App() {
         <div className="header-actions">
           <span className="zip-badge tabular-nums">
             <span className="zip-dot" aria-hidden="true" />
-            49504 · Grand Rapids
+            Grand Rapids · West &amp; East
           </span>
           <button
             type="button"

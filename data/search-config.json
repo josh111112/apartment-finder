@@ -1,20 +1,23 @@
 {
   "city": "Grand Rapids",
   "state": "MI",
-  "areaName": "Downtown Grand Rapids — Bridge Street & West of the River (49504)",
-  "locationNotes": "Focus on duplexes, townhomes, upper/lower flats, and houses close to the Bridge Street NW corridor or slightly west of the Grand River (West Grand, SWAN, Westside Connection, John Ball Park east edge, 49504). Exclude large apartment complexes.",
+  "areaName": "Downtown Grand Rapids — Bridge St / Near Westside & Cherry St / Heritage Hill / East Hills",
+  "locationNotes": "Focus on duplexes, townhomes, upper/lower flats, and houses in two walkable urban zones: (1) Bridge Street NW & near Westside just west of the Grand River (49504, generally east of Covell Ave / not too far west), and (2) Cherry Street SE, Heritage Hill, East Hills, and Eastown (49503 / 49506). Exclude large apartment complexes.",
   "center": {
-    "lat": 42.9698,
-    "lng": -85.6768
+    "lat": 42.9634,
+    "lng": -85.6681
   },
-  "searchRadiusMiles": 1.25,
+  "searchRadiusMiles": 1.6,
   "targetNeighborhoods": [
     "Bridge Street",
     "West Grand",
     "Westside Connection",
     "SWAN (Southwest Area Neighbors)",
     "Downtown West",
-    "John Ball Park"
+    "Cherry Hill",
+    "Heritage Hill",
+    "East Hills",
+    "Eastown"
   ],
   "propertyTypes": ["duplex", "townhome", "house", "flat"],
   "excludeApartmentComplexes": true,

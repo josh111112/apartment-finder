@@ -144,11 +144,11 @@ export function DoorThreshold({
         <div className="threshold-viewport">
           <div className="threshold-hero-copy">
             <h1 className="threshold-title">
-              Westside homes, without the complexes.
+              Grand Rapids homes, without the complexes.
             </h1>
             <p className="threshold-subtitle">
-              Duplexes, townhomes, and neighborhood flats near Bridge Street and
-              west of the Grand River.
+              Duplexes, townhomes, and neighborhood flats near Bridge Street,
+              Cherry Street, Heritage Hill, and East Hills.
             </p>
           </div>
 

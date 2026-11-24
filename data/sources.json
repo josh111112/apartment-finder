@@ -6,8 +6,17 @@
       "websiteUrl": "https://american-realty.com",
       "availabilityUrl": "https://american-realty.com",
       "active": true,
-      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
-      "notes": "Major GR residential rental manager — duplexes, townhomes, flats & houses in West Grand / Bridge St / downtown."
+      "lastCheckedAt": "2026-11-24T00:52:00.000Z",
+      "notes": "Major GR residential rental manager — duplexes, townhomes, flats & houses in West Grand, Lakertown, Eastown, Historic Corridor & Medical Mile."
+    },
+    {
+      "id": "heritage-hill-association",
+      "name": "Heritage Hill Association",
+      "websiteUrl": "https://heritagehillweb.org/properties/current-property-listings/",
+      "availabilityUrl": "https://heritagehillweb.org/properties/current-property-listings/",
+      "active": true,
+      "lastCheckedAt": "2026-11-24T00:52:00.000Z",
+      "notes": "Official Heritage Hill / Cherry Hill neighborhood rental board — historic flats, duplexes & carriage houses listed directly by local landlords."
     },
     {
       "id": "shift-property-management",
@@ -33,7 +42,7 @@
       "websiteUrl": "https://fulton-group.com",
       "availabilityUrl": "https://fulton-group.com",
       "active": true,
-      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "lastCheckedAt": "2026-11-24T00:52:00.000Z",
       "notes": "Urban core specialist (Downtown, Westside, Eastown) — split-level units, flats & duplexes."
     },
     {
