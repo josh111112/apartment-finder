@@ -1,0 +1,744 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2026-11-24T04:31:16.428Z",
+      "buildings": [
+        {
+          "id": "1021-park-st-sw",
+          "name": "1021 Park St SW",
+          "minRent": 3900,
+          "minEffectiveCost": 3900,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1025-park-st-sw",
+          "name": "1025 Park St SW",
+          "minRent": 2300,
+          "minEffectiveCost": 2300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "103-lexington-ave-nw-1",
+          "name": "103 Lexington Ave NW #1",
+          "minRent": 2200,
+          "minEffectiveCost": 2200,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "103-lexington-ave-nw-2",
+          "name": "103 Lexington Ave NW #2",
+          "minRent": 1200,
+          "minEffectiveCost": 1200,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1044-chatham-st-nw-1",
+          "name": "1044 Chatham St NW #1",
+          "minRent": 2750,
+          "minEffectiveCost": 2750,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1044-chatham-st-nw-2",
+          "name": "1044 Chatham St NW #2",
+          "minRent": 2750,
+          "minEffectiveCost": 2750,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1047-elizabeth-ave-nw",
+          "name": "1047 Elizabeth Ave NW",
+          "minRent": 1950,
+          "minEffectiveCost": 1950,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1050-veto-st-nw",
+          "name": "1050 Veto St NW",
+          "minRent": 3100,
+          "minEffectiveCost": 3100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1051-veto-st-nw",
+          "name": "1051 Veto St NW",
+          "minRent": 2650,
+          "minEffectiveCost": 2650,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1055-pine-ave-nw",
+          "name": "1055 Pine Ave NW",
+          "minRent": 1350,
+          "minEffectiveCost": 1350,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1057-pine-ave-nw",
+          "name": "1057 Pine Ave NW",
+          "minRent": 1300,
+          "minEffectiveCost": 1300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1105-dayton-st-sw",
+          "name": "1105 Dayton St SW",
+          "minRent": 2500,
+          "minEffectiveCost": 2500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1113-powers-ave-nw-upper",
+          "name": "1113 Powers Ave NW (Upper)",
+          "minRent": 1400,
+          "minEffectiveCost": 1400,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1115-powers-ave-nw",
+          "name": "1115 Powers Ave NW",
+          "minRent": 1600,
+          "minEffectiveCost": 1600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1119-park-st-sw",
+          "name": "1119 Park St SW",
+          "minRent": 2400,
+          "minEffectiveCost": 2400,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1130-covell-ave-nw",
+          "name": "1130 Covell Ave NW",
+          "minRent": 3200,
+          "minEffectiveCost": 3200,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1134-hovey-st-sw",
+          "name": "1134 Hovey St SW",
+          "minRent": 2300,
+          "minEffectiveCost": 2300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1137-park-st-sw",
+          "name": "1137 Park St SW",
+          "minRent": 3100,
+          "minEffectiveCost": 3100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1144-california-st-nw",
+          "name": "1144 California St NW",
+          "minRent": 2800,
+          "minEffectiveCost": 2800,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1145-powers-ave-nw",
+          "name": "1145 Powers Ave NW",
+          "minRent": 2550,
+          "minEffectiveCost": 2550,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1150-sibley-st-nw",
+          "name": "1150 Sibley St NW",
+          "minRent": 3100,
+          "minEffectiveCost": 3100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1206-veto-st-nw",
+          "name": "1206 Veto St NW",
+          "minRent": 3000,
+          "minEffectiveCost": 3000,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1213-lake-michigan-dr-nw",
+          "name": "1213 Lake Michigan Dr NW",
+          "minRent": 2900,
+          "minEffectiveCost": 2900,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1309-garfield-ave-nw",
+          "name": "1309 Garfield Ave NW",
+          "minRent": 2650,
+          "minEffectiveCost": 2650,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "131-lexington-ave-nw-2",
+          "name": "131 Lexington Ave NW #2",
+          "minRent": 2450,
+          "minEffectiveCost": 2450,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "133-lexington-ave-nw-1",
+          "name": "133 Lexington Ave NW #1",
+          "minRent": 2250,
+          "minEffectiveCost": 2250,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1337-muskegon-ave-nw-1",
+          "name": "1337 Muskegon Ave NW #1",
+          "minRent": 1600,
+          "minEffectiveCost": 1600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "141-lexington-sw",
+          "name": "141 Lexington SW",
+          "minRent": 2575,
+          "minEffectiveCost": 2575,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "143-valley-ave-nw",
+          "name": "143 Valley Ave NW",
+          "minRent": 2950,
+          "minEffectiveCost": 2950,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "144-valley-ave-nw",
+          "name": "144 Valley Ave NW",
+          "minRent": 2500,
+          "minEffectiveCost": 2500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "146-gold-2-sw",
+          "name": "146 Gold #2 SW",
+          "minRent": 1200,
+          "minEffectiveCost": 1200,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "148-gold-2-sw",
+          "name": "148 Gold #2 SW",
+          "minRent": 1200,
+          "minEffectiveCost": 1200,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "157-lane-ave-nw-2",
+          "name": "157 Lane Ave NW #2",
+          "minRent": 1500,
+          "minEffectiveCost": 1500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "1631-lake-michigan-dr-nw",
+          "name": "1631 Lake Michigan Dr NW",
+          "minRent": 2500,
+          "minEffectiveCost": 2500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "206-garfield-ave-sw",
+          "name": "206 Garfield Ave SW",
+          "minRent": 2650,
+          "minEffectiveCost": 2650,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "206-valley-ave-nw",
+          "name": "206 Valley Ave NW",
+          "minRent": 2700,
+          "minEffectiveCost": 2700,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "210-marion-ave-nw",
+          "name": "210 Marion Ave NW",
+          "minRent": 3100,
+          "minEffectiveCost": 3100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "218-garfield-ave-sw",
+          "name": "218 Garfield Ave SW",
+          "minRent": 3100,
+          "minEffectiveCost": 3100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "221-gold-ave-nw",
+          "name": "221 Gold Ave NW",
+          "minRent": 2850,
+          "minEffectiveCost": 2850,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "223-valley-ave-nw",
+          "name": "223 Valley Ave NW",
+          "minRent": 2750,
+          "minEffectiveCost": 2750,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "227-valley-ave-nw",
+          "name": "227 Valley Ave NW",
+          "minRent": 1850,
+          "minEffectiveCost": 1850,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "229-valley-ave-nw",
+          "name": "229 Valley Ave NW",
+          "minRent": 2700,
+          "minEffectiveCost": 2700,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "233-garfield-ave-sw",
+          "name": "233 Garfield Ave SW",
+          "minRent": 3200,
+          "minEffectiveCost": 3200,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "234-marion-ave-nw",
+          "name": "234 Marion Ave NW",
+          "minRent": 3500,
+          "minEffectiveCost": 3500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "245-national-ave-nw",
+          "name": "245 National Ave NW",
+          "minRent": 3000,
+          "minEffectiveCost": 3000,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "248-lane-ave-sw-unit-a",
+          "name": "248 Lane Ave SW Unit A",
+          "minRent": 3300,
+          "minEffectiveCost": 3300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "248-lane-ave-sw-unit-c",
+          "name": "248 Lane Ave SW Unit C",
+          "minRent": 3300,
+          "minEffectiveCost": 3300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "248-lane-ave-sw-unit-d",
+          "name": "248 Lane Ave SW Unit D",
+          "minRent": 3300,
+          "minEffectiveCost": 3300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "248-lane-ave-sw-unit-e",
+          "name": "248 Lane Ave SW Unit E",
+          "minRent": 3300,
+          "minEffectiveCost": 3300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "250-national-ave-nw-upper",
+          "name": "250 National Ave NW (Upper)",
+          "minRent": 1400,
+          "minEffectiveCost": 1400,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "257-garfield-ave-nw",
+          "name": "257 Garfield Ave NW",
+          "minRent": 2550,
+          "minEffectiveCost": 2550,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "258-valley-ave-nw",
+          "name": "258 Valley Ave NW",
+          "minRent": 2950,
+          "minEffectiveCost": 2950,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "261-garfield-ave-nw",
+          "name": "261 Garfield Ave NW",
+          "minRent": 3000,
+          "minEffectiveCost": 3000,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "300-valley-ave-nw",
+          "name": "300 Valley Ave NW",
+          "minRent": 2600,
+          "minEffectiveCost": 2600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "301-indiana-ave-nw-2",
+          "name": "301 Indiana Ave NW #2",
+          "minRent": 2100,
+          "minEffectiveCost": 2100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "301-seward-ave-nw-1",
+          "name": "301 Seward Ave NW #1",
+          "minRent": 1500,
+          "minEffectiveCost": 1500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "301-seward-ave-nw-3",
+          "name": "301 Seward Ave NW #3",
+          "minRent": 1500,
+          "minEffectiveCost": 1500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "301-seward-ave-nw-4",
+          "name": "301 Seward Ave NW #4",
+          "minRent": 1500,
+          "minEffectiveCost": 1500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "303-indiana-ave-nw-1",
+          "name": "303 Indiana Ave NW #1",
+          "minRent": 2300,
+          "minEffectiveCost": 2300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "306-ball-park-blvd-nw",
+          "name": "306 Ball Park Blvd NW",
+          "minRent": 3400,
+          "minEffectiveCost": 3400,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "313-marion-ave-sw",
+          "name": "313 Marion Ave SW",
+          "minRent": 2950,
+          "minEffectiveCost": 2950,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "314-scott-ave-nw",
+          "name": "314 Scott Ave NW",
+          "minRent": 2600,
+          "minEffectiveCost": 2600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "315-sunset-ave-nw",
+          "name": "315 Sunset Ave NW",
+          "minRent": 3100,
+          "minEffectiveCost": 3100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "321-marion-ave-sw-1",
+          "name": "321 Marion Ave SW #1",
+          "minRent": 2500,
+          "minEffectiveCost": 2500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "341-garfield-ave-nw",
+          "name": "341 Garfield Ave NW",
+          "minRent": 3500,
+          "minEffectiveCost": 3500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "345-gunnison-ave-sw",
+          "name": "345 Gunnison Ave SW",
+          "minRent": 2850,
+          "minEffectiveCost": 2850,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "40-lane-ave-nw",
+          "name": "40 Lane Ave NW",
+          "minRent": 1850,
+          "minEffectiveCost": 1850,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "400-carpenter-ave-nw-unit-a",
+          "name": "400 Carpenter Ave NW Unit A",
+          "minRent": 3500,
+          "minEffectiveCost": 3500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "400-carpenter-ave-nw-unit-b",
+          "name": "400 Carpenter Ave NW Unit B",
+          "minRent": 3500,
+          "minEffectiveCost": 3500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "407-milwaukee-ave-nw-b",
+          "name": "407 Milwaukee Ave NW B",
+          "minRent": 2700,
+          "minEffectiveCost": 2700,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "416-lane-ave-nw-1",
+          "name": "416 Lane Ave NW #1",
+          "minRent": 1400,
+          "minEffectiveCost": 1400,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "416-lane-ave-nw-2",
+          "name": "416 Lane Ave NW #2",
+          "minRent": 1300,
+          "minEffectiveCost": 1300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "44-john-ball-park-dr-nw",
+          "name": "44 John Ball Park Dr NW",
+          "minRent": 3100,
+          "minEffectiveCost": 3100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "4475-chesterfield-blvd-nw",
+          "name": "4475 Chesterfield Blvd NW",
+          "minRent": 2650,
+          "minEffectiveCost": 2650,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "52-richards-ave-nw",
+          "name": "52 Richards Ave NW",
+          "minRent": 2700,
+          "minEffectiveCost": 2700,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "547-valley-ave-nw",
+          "name": "547 Valley Ave NW",
+          "minRent": 1800,
+          "minEffectiveCost": 1800,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "548-fremont-ave-nw",
+          "name": "548 Fremont Ave NW",
+          "minRent": 1700,
+          "minEffectiveCost": 1700,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "550-milwaukee-ave-nw",
+          "name": "550 Milwaukee Ave NW",
+          "minRent": 1800,
+          "minEffectiveCost": 1800,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "56-john-ball-park-dr-nw",
+          "name": "56 John Ball Park Dr NW",
+          "minRent": 2850,
+          "minEffectiveCost": 2850,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "604-chatham-1-nw",
+          "name": "604 Chatham #1 NW",
+          "minRent": 1800,
+          "minEffectiveCost": 1800,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "604-chatham-3-nw",
+          "name": "604 Chatham #3 NW",
+          "minRent": 1800,
+          "minEffectiveCost": 1800,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "611-chatham-st-nw-1",
+          "name": "611 Chatham St NW #1",
+          "minRent": 2150,
+          "minEffectiveCost": 2150,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "617-valley-ave-nw",
+          "name": "617 Valley Ave NW",
+          "minRent": 3100,
+          "minEffectiveCost": 3100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "623-chatham-st-nw",
+          "name": "623 Chatham St NW",
+          "minRent": 2950,
+          "minEffectiveCost": 2950,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "643-lake-michigan-dr-nw-1",
+          "name": "643 Lake Michigan Dr NW #1",
+          "minRent": 1600,
+          "minEffectiveCost": 1600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "711-watson-st-sw",
+          "name": "711 Watson St SW",
+          "minRent": 3200,
+          "minEffectiveCost": 3200,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "735-1st-st-nw-1",
+          "name": "735 1st St NW #1",
+          "minRent": 2600,
+          "minEffectiveCost": 2600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "735-1st-st-nw-2",
+          "name": "735 1st St NW #2",
+          "minRent": 2600,
+          "minEffectiveCost": 2600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "752-lake-michigan-dr-nw",
+          "name": "752 Lake Michigan Dr NW",
+          "minRent": 3000,
+          "minEffectiveCost": 3000,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "810-hovey-st-sw-2",
+          "name": "810 Hovey St SW #2",
+          "minRent": 1200,
+          "minEffectiveCost": 1200,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "813-dayton-st-sw-1",
+          "name": "813 Dayton St SW #1",
+          "minRent": 2600,
+          "minEffectiveCost": 2600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "813-dayton-st-sw-2",
+          "name": "813 Dayton St SW #2",
+          "minRent": 2600,
+          "minEffectiveCost": 2600,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "816-sibley-st-nw-1",
+          "name": "816 Sibley St NW #1",
+          "minRent": 2500,
+          "minEffectiveCost": 2500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "816-sibley-st-nw-2",
+          "name": "816 Sibley St NW #2",
+          "minRent": 2500,
+          "minEffectiveCost": 2500,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "821-nagold-st-nw",
+          "name": "821 Nagold St NW",
+          "minRent": 2350,
+          "minEffectiveCost": 2350,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "822-california-st-nw-2",
+          "name": "822 California St NW #2",
+          "minRent": 2100,
+          "minEffectiveCost": 2100,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "823-california-st-nw-2",
+          "name": "823 California St NW #2",
+          "minRent": 1900,
+          "minEffectiveCost": 1900,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "824-bridge-st-nw-a",
+          "name": "824 Bridge St NW A",
+          "minRent": 1700,
+          "minEffectiveCost": 1700,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "824-bridge-st-nw-c",
+          "name": "824 Bridge St NW C",
+          "minRent": 1650,
+          "minEffectiveCost": 1650,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "824-first-st-nw",
+          "name": "824 First St NW",
+          "minRent": 3000,
+          "minEffectiveCost": 3000,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "828-bridge-st-nw-2",
+          "name": "828 Bridge St NW #2",
+          "minRent": 1800,
+          "minEffectiveCost": 1800,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "851-watson-1-sw",
+          "name": "851 Watson #1 SW",
+          "minRent": 2725,
+          "minEffectiveCost": 2725,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "856-lake-michigan-dr-nw",
+          "name": "856 Lake Michigan Dr NW",
+          "minRent": 2650,
+          "minEffectiveCost": 2650,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "921-norwich-ave-sw",
+          "name": "921 Norwich Ave SW",
+          "minRent": 2300,
+          "minEffectiveCost": 2300,
+          "availableUnitCount": 1
+        },
+        {
+          "id": "933-chatham-st-nw-1",
+          "name": "933 Chatham St NW #1",
+          "minRent": 2150,
+          "minEffectiveCost": 2150,
+          "availableUnitCount": 1
+        }
+      ]
+    }
+  ]
+}

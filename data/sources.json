@@ -1,0 +1,184 @@
+{
+  "sources": [
+    {
+      "id": "american-realty",
+      "name": "American Realty",
+      "websiteUrl": "https://american-realty.com",
+      "availabilityUrl": "https://american-realty.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Major GR residential rental manager — duplexes, townhomes, flats & houses in West Grand / Bridge St / downtown."
+    },
+    {
+      "id": "shift-property-management",
+      "name": "Shift Property Management",
+      "websiteUrl": "https://shiftpropertymanagement.com",
+      "availabilityUrl": "https://shiftpropertymanagement.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Office at 701 Fulton St W (49504); heavy concentration of Westside & downtown residential rentals."
+    },
+    {
+      "id": "united-properties-west-mi",
+      "name": "United Properties of West Michigan",
+      "websiteUrl": "https://www.rentupm.com",
+      "availabilityUrl": "https://www.rentupm.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Office at 1348 Front Ave NW (49504); large inventory of Westside duplexes, houses & multi-family units."
+    },
+    {
+      "id": "the-fulton-group",
+      "name": "The Fulton Group",
+      "websiteUrl": "https://fulton-group.com",
+      "availabilityUrl": "https://fulton-group.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Urban core specialist (Downtown, Westside, Eastown) — split-level units, flats & duplexes."
+    },
+    {
+      "id": "compass-property-management",
+      "name": "Compass Property Management",
+      "websiteUrl": "https://compass101.com",
+      "availabilityUrl": "https://compass101.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Large GR residential portfolio (AppFolio portal) — duplexes, townhomes & single-family houses."
+    },
+    {
+      "id": "access-property-management",
+      "name": "Access Property Management Group",
+      "websiteUrl": "https://www.accesspmgroup.com",
+      "availabilityUrl": "https://www.accesspmgroup.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Residential homes, duplexes & townhomes across Grand Rapids / Kent County."
+    },
+    {
+      "id": "green-property-management",
+      "name": "Green Property Management",
+      "websiteUrl": "https://www.livegreenlocal.com",
+      "availabilityUrl": "https://www.livegreenlocal.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Single-family homes & small multi-family duplexes across Greater Grand Rapids."
+    },
+    {
+      "id": "simple-property-management",
+      "name": "Simple Property Management",
+      "websiteUrl": "https://simplepmgroup.com",
+      "availabilityUrl": "https://simplepmgroup.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Urban duplexes, single-family conversions & townhomes in GR including 49504."
+    },
+    {
+      "id": "leasegr",
+      "name": "LeaseGR",
+      "websiteUrl": "https://www.leasegr.com",
+      "availabilityUrl": "https://www.leasegr.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Mid-to-upper-tier houses, condos & duplexes in Grand Rapids."
+    },
+    {
+      "id": "lighthouse-property-management",
+      "name": "Lighthouse Property Management",
+      "websiteUrl": "https://lighthousepm.com",
+      "availabilityUrl": "https://lighthousepm.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "AppFolio-powered portal with split-level duplexes & single-family homes across GR."
+    },
+    {
+      "id": "qwest-property-management",
+      "name": "Qwest Property Management",
+      "websiteUrl": "https://qwestpm.com",
+      "availabilityUrl": "https://qwestpm.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Urban single-family rentals, townhomes & small multi-unit properties in GR."
+    },
+    {
+      "id": "sg-properties",
+      "name": "S&G Properties",
+      "websiteUrl": "https://rentsg.com",
+      "availabilityUrl": "https://rentsg.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Long-standing family-owned GR manager with residential houses & duplexes."
+    },
+    {
+      "id": "urban-pharm",
+      "name": "Urban Pharm Property Management",
+      "websiteUrl": "https://urbanpharm.com",
+      "availabilityUrl": "https://urbanpharm.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Urban GR residential rentals & small multi-unit flats."
+    },
+    {
+      "id": "rpm-partners-mi",
+      "name": "Real Property Management Partners",
+      "websiteUrl": "https://rpmpartners-mi.com",
+      "availabilityUrl": "https://rpmpartners-mi.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Single-family homes, townhomes & duplexes in Greater Grand Rapids."
+    },
+    {
+      "id": "rpm-neighbors",
+      "name": "Real Property Management Neighbors",
+      "websiteUrl": "https://rpmneighbors.com",
+      "availabilityUrl": "https://rpmneighbors.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Single-family homes, townhomes & duplexes in West Michigan."
+    },
+    {
+      "id": "pmi-west-michigan",
+      "name": "PMI West Michigan",
+      "websiteUrl": "https://grandrapidspropertymanagementinc.com",
+      "availabilityUrl": "https://grandrapidspropertymanagementinc.com",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Local residential & small multi-family rentals in Grand Rapids."
+    },
+    {
+      "id": "zillow-rentals-49504",
+      "name": "Zillow Rentals (49504 Duplexes/Townhomes/Houses)",
+      "websiteUrl": "https://www.zillow.com/grand-rapids-mi-49504/rentals/",
+      "availabilityUrl": "https://www.zillow.com/grand-rapids-mi-49504/rentals/",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Best aggregator for private landlords, duplexes, townhomes & houses in 49504. [Note: Blocked by PerimeterX anti-bot on last automated sweep.]"
+    },
+    {
+      "id": "hotpads-49504",
+      "name": "HotPads (49504 Westside)",
+      "websiteUrl": "https://hotpads.com/grand-rapids-mi-49504/houses-for-rent",
+      "availabilityUrl": "https://hotpads.com/grand-rapids-mi-49504/houses-for-rent",
+      "active": true,
+      "lastCheckedAt": "2026-11-23T23:30:00.000Z",
+      "notes": "Strong map-based filtering for private landlords, duplexes & townhomes. [Note: Blocked by PerimeterX anti-bot on last automated sweep.]"
+    },
+    {
+      "id": "trulia-49504",
+      "name": "Trulia Rentals (49504)",
+      "websiteUrl": "https://www.trulia.com/for_rent/49504_zip/",
+      "availabilityUrl": "https://www.trulia.com/for_rent/49504_zip/",
+      "active": true,
+      "lastCheckedAt": null,
+      "notes": "Cross-check for duplexes, townhomes & houses in West Grand / SWAN / Bridge St."
+    },
+    {
+      "id": "realtor-49504",
+      "name": "Realtor.com Rentals (49504)",
+      "websiteUrl": "https://www.realtor.com/apartments/49504",
+      "availabilityUrl": "https://www.realtor.com/apartments/49504",
+      "active": true,
+      "lastCheckedAt": null,
+      "notes": "Filter by Townhomes / Single-Family / Multi-Family in 49504."
+    }
+  ]
+}

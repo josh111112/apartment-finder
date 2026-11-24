@@ -1,0 +1,106 @@
+:root {
+  /* Core palette sampled directly from the bungalow illustrations */
+  --surface-exterior: #ffffff;
+  --surface-interior: #faf4e3;
+  --surface-sheet: rgba(255, 253, 247, 0.9);
+  --surface-sheet-solid: #fffdf7;
+  --surface-chip: rgba(250, 244, 227, 0.92);
+
+  /* Ink & Typography Colors */
+  --ink-primary: #1b264f;
+  --ink-secondary: #3f4d73;
+  --ink-muted: #56648a;
+
+  /* Illustration Accents */
+  --accent-terracotta: #b84323;
+  --accent-terracotta-hover: #963419;
+  --accent-oak: #c47b3e;
+  --accent-sky: #7eddf7;
+  --accent-sky-deep: #1e6f91;
+  --accent-leaf: #2d7a28;
+  --accent-slate: #6f8ca8;
+
+  /* Architectural Borders & Depth */
+  --border-ink: rgba(27, 38, 79, 0.16);
+  --border-ink-strong: rgba(27, 38, 79, 0.34);
+  --shadow-soft: 0 20px 44px -18px rgba(27, 38, 79, 0.18);
+  --shadow-lift: 0 12px 28px -12px rgba(27, 38, 79, 0.22);
+
+  /* Typography */
+  --font-display: "Bricolage Grotesque", system-ui, -apple-system, sans-serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Radii & Spacing */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--surface-exterior);
+  color: var(--ink-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-underline-offset: 0.2em;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--surface-exterior);
+  color: var(--ink-primary);
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(126, 221, 247, 0.45);
+  color: var(--ink-primary);
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--accent-terracotta);
+  outline-offset: 3px;
+}
+
+/* Custom scrollbar themed from the bungalow palette */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-interior);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(27, 38, 79, 0.28);
+  border-radius: 999px;
+  border: 2px solid var(--surface-interior);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(27, 38, 79, 0.48);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
